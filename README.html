@@ -385,7 +385,8 @@ pre code {
 <li>Create main data matrix:
 <code>data_mined/CH.GERM_association.matrix___2022-09-08.tsv</code><br />
 </li>
-<li>Annotate copy number variants between g.CNVs and ch.mCAs:
+<li>Annotate duplicated (conflicting CN since they are affecting same
+genes) copy number variants between g.CNVs and ch.mCAs:
 <ul>
 <li><code>data_mined/germ_cnvs_and_mCA.conflict_2022-09-08.txt</code></li>
 <li><code>data_mined/mCA_calls_and_germ.conflict_2022-09-08.txt</code></li>
@@ -450,6 +451,19 @@ conversion columns to different levels in OncoTree
 classification</p></li>
 <li><p><code>refGene_hg19.txt</code>: Genomic regions for genes in hg19
 genomic assembly (from UCSC Genome Browser database)</p></li>
+<li><p><code>CH.GERM_association.matrix___2022-09-08.tsv</code>: Data
+matrix by patient with clinical annotations and all annotations
+regarding CH and Germline events to run associations
+(<code>study file!</code>)</p></li>
+<li><p><code>all_germ_cols.txt</code>: List of germline columns to run
+associations by gene when running scripts in
+<code>code/inJuno/NF_main.associations.by.gene_inJuno</code></p></li>
+<li><p><code>germ_cnvs_and_mCA.conflict_2022-09-08.txt</code>: Germline
+CNVs annotated with ‘conflicting’ tag (if affecting same patient and
+gene when compared to mCAs calls)</p></li>
+<li><p><code>mCA_calls_and_germ.conflict_2022-09-08.txt</code>: mCA
+calls (from FACETS-CH) annotated with ‘conflicting’ tag (if affecting
+same patient and gene when compared to germline CNV calls)</p></li>
 </ul>
 </div>
 <div id="tree-level-2" class="section level2">
