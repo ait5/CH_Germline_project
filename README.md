@@ -13,7 +13,15 @@
 
 1. Run `preparing_matrix_for_associations.R` to:  
     - Create main data matrix: `data_mined/CH.GERM_association.matrix___2022-09-08.tsv`  
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - Annotate duplicated (conflicting CN since they are affecting same genes) copy number variants between g.CNVs and ch.mCAs:  
+=======
     - Annotate copy number variants between g.CNVs and ch.mCAs:  
+>>>>>>> 262c4f338573235b9bfa5fce9b1536794b055a1a
+=======
+    - Annotate copy number variants between g.CNVs and ch.mCAs:  
+>>>>>>> 262c4f338573235b9bfa5fce9b1536794b055a1a
         - `data_mined/germ_cnvs_and_mCA.conflict_2022-09-08.txt`
         - `data_mined/mCA_calls_and_germ.conflict_2022-09-08.txt`  
   
@@ -64,6 +72,24 @@ OncoTree codes and conversion columns to different levels in OncoTree classifica
 - `refGene_hg19.txt`:
 Genomic regions for genes in hg19 genomic assembly (from UCSC Genome Browser database)
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `CH.GERM_association.matrix___2022-09-08.tsv`:
+Data matrix by patient with clinical annotations and all annotations regarding CH and Germline events to run associations (`study file!`)
+
+- `all_germ_cols.txt`:
+List of germline columns to run associations by gene when running scripts in `code/inJuno/NF_main.associations.by.gene_inJuno`
+
+- `germ_cnvs_and_mCA.conflict_2022-09-08.txt`:
+Germline CNVs annotated with 'conflicting' tag (if affecting same patient and gene when compared to mCAs calls)
+
+- `mCA_calls_and_germ.conflict_2022-09-08.txt`:
+mCA calls (from FACETS-CH) annotated with 'conflicting' tag (if affecting same patient and gene when compared to germline CNV calls)
+
+=======
+>>>>>>> 262c4f338573235b9bfa5fce9b1536794b055a1a
+=======
+>>>>>>> 262c4f338573235b9bfa5fce9b1536794b055a1a
 
 
 ## Tree (level 2)
