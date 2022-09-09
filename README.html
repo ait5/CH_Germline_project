@@ -420,51 +420,73 @@ for manuscript in <code>manuscript_figures/plots_paper/</code></p></li>
 </div>
 <div id="data-in-repository" class="section level2">
 <h2>Data in repository</h2>
+<div id="data" class="section level4">
+<h4>data/</h4>
+<pre><code>├── Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt
+├── DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt
+├── FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt
+├── List_of_anonymized_Samples.txt
+├── calls_mCA.50k.annotations_2022-03-07_anonymized.tsv
+├── ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv
+├── germ_90_genes.txt
+├── mCA.50k.annotations_2022-03-07_anonymized.tsv
+├── oncotree_conversion_codes.txt
+└── refGene_hg19.txt</code></pre>
 <ul>
-<li><p><code>Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt</code>:
+<li><p><code>data/Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt</code>:
 List of CNV deletions in the 90 TSG studied (output from Miika’s
 germline pipeline)</p></li>
-<li><p><code>DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt</code>:
+<li><p><code>data/DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt</code>:
 List of rare and Pathogenic or Likely-Pathogenic SNVs and Indels calls
 in the 90 TSG studied (output from Miika’s germline pipeline) and
 filtered from misscalled CH variants (essentially, looking for
 duplicated calls between germline calls and CH calls
 [‘code/running_duplicates_script.R’ from Sebas])</p></li>
-<li><p><code>germ_90_genes.txt</code>: List of TSGs included in the
+<li><p><code>data/germ_90_genes.txt</code>: List of TSGs included in the
 germline assessment for rare and P/LP variants</p></li>
-<li><p><code>FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt</code>:
+<li><p><code>data/FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt</code>:
 CH calls from 50K study removing duplicates from multiple sample by
 patients</p></li>
-<li><p><code>List_of_anonymized_Samples.txt</code>: List of 50k patients
-included in the germline calling pipeline</p></li>
-<li><p><code>ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv</code>:
+<li><p><code>data/List_of_anonymized_Samples.txt</code>: List of 50k
+patients included in the germline calling pipeline</p></li>
+<li><p><code>data/ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv</code>:
 Clincal data annotation for patients in the 50K CH characterization
 (i.e. dmps id, age, inferred ancestry, smoking history, therapy status,
 Teng’s mCA calls, clinical follow-up from Gao et al, etc)</p></li>
-<li><p><code>calls_mCA.50k.annotations_2022-03-07_anonymized.tsv</code>:
+<li><p><code>data/calls_mCA.50k.annotations_2022-03-07_anonymized.tsv</code>:
 List of copy number alterations calls from running FACETS-CH (from Gao
 et.al 2020)</p></li>
-<li><p><code>mCA.50k.annotations_2022-03-07_anonymized.tsv</code>: Data
-matrix with annotations for mCA calls</p></li>
-<li><p><code>oncotree_conversion_codes.txt</code>: OncoTree codes and
-conversion columns to different levels in OncoTree
+<li><p><code>data/mCA.50k.annotations_2022-03-07_anonymized.tsv</code>:
+Data matrix with annotations for mCA calls</p></li>
+<li><p><code>data/oncotree_conversion_codes.txt</code>: OncoTree codes
+and conversion columns to different levels in OncoTree
 classification</p></li>
-<li><p><code>refGene_hg19.txt</code>: Genomic regions for genes in hg19
-genomic assembly (from UCSC Genome Browser database)</p></li>
-<li><p><code>CH.GERM_association.matrix___2022-09-08.tsv</code>: Data
-matrix by patient with clinical annotations and all annotations
+<li><p><code>data/refGene_hg19.txt</code>: Genomic regions for genes in
+hg19 genomic assembly (from UCSC Genome Browser database)</p></li>
+<li><p><code>data_mined/CH.GERM_association.matrix___2022-09-08.tsv</code>:
+Data matrix by patient with clinical annotations and all annotations
 regarding CH and Germline events to run associations
 (<code>study file!</code>)</p></li>
-<li><p><code>all_germ_cols.txt</code>: List of germline columns to run
-associations by gene when running scripts in
+</ul>
+</div>
+<div id="data_mined" class="section level4">
+<h4>data_mined/</h4>
+<pre><code>├── CH.GERM_association.matrix___2022-09-08.tsv
+├── all_germ_cols.txt
+├── germ_cnvs_and_mCA.conflict_2022-09-08.txt
+└── mCA_calls_and_germ.conflict_2022-09-08.txt</code></pre>
+<ul>
+<li><p><code>data_mined/all_germ_cols.txt</code>: List of germline
+columns to run associations by gene when running scripts in
 <code>code/inJuno/NF_main.associations.by.gene_inJuno</code></p></li>
-<li><p><code>germ_cnvs_and_mCA.conflict_2022-09-08.txt</code>: Germline
-CNVs annotated with ‘conflicting’ tag (if affecting same patient and
-gene when compared to mCAs calls)</p></li>
+<li><p><code>data_mined/germ_cnvs_and_mCA.conflict_2022-09-08.txt</code>:
+Germline CNVs annotated with ‘conflicting’ tag (if affecting same
+patient and gene when compared to mCAs calls)</p></li>
 <li><p><code>mCA_calls_and_germ.conflict_2022-09-08.txt</code>: mCA
 calls (from FACETS-CH) annotated with ‘conflicting’ tag (if affecting
 same patient and gene when compared to germline CNV calls)</p></li>
 </ul>
+</div>
 </div>
 <div id="tree-level-2" class="section level2">
 <h2>Tree (level 2)</h2>

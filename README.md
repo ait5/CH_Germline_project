@@ -34,6 +34,18 @@
 
 ## Data in repository
 
+#### data/
+    ├── Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt
+    ├── DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt
+    ├── FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt
+    ├── List_of_anonymized_Samples.txt
+    ├── calls_mCA.50k.annotations_2022-03-07_anonymized.tsv
+    ├── ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv
+    ├── germ_90_genes.txt
+    ├── mCA.50k.annotations_2022-03-07_anonymized.tsv
+    ├── oncotree_conversion_codes.txt
+    └── refGene_hg19.txt
+
 - `data/Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt`:
 List of CNV deletions in the 90 TSG studied (output from Miika's germline pipeline)
 
@@ -65,7 +77,13 @@ OncoTree codes and conversion columns to different levels in OncoTree classifica
 Genomic regions for genes in hg19 genomic assembly (from UCSC Genome Browser database)
 
 - `data_mined/CH.GERM_association.matrix___2022-09-08.tsv`:
-Data matrix by patient with clinical annotations and all annotations regarding CH and Germline events to run associations (`study file!`)
+Data matrix by patient with clinical annotations and all annotations regarding CH and Germline events to run associations (`study file!`)  
+
+#### data_mined/
+    ├── CH.GERM_association.matrix___2022-09-08.tsv
+    ├── all_germ_cols.txt
+    ├── germ_cnvs_and_mCA.conflict_2022-09-08.txt
+    └── mCA_calls_and_germ.conflict_2022-09-08.txt
 
 - `data_mined/all_germ_cols.txt`:
 List of germline columns to run associations by gene when running scripts in `code/inJuno/NF_main.associations.by.gene_inJuno`
