@@ -34,43 +34,43 @@
 
 ## Data in repository
 
-- `Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt`:
+- `data/Cohort_50k_CNVs_90Genes_deletions_only_pathogenic_only_v1.txt`:
 List of CNV deletions in the 90 TSG studied (output from Miika's germline pipeline)
 
-- `DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt`:
+- `data/DUPLI_filtered_Cohort_50k_Pathogenic_90Genes_v2.txt`:
 List of rare and Pathogenic or Likely-Pathogenic SNVs and Indels calls in the 90 TSG studied (output from Miika's germline pipeline) and filtered from misscalled CH variants (essentially, looking for duplicated calls between germline calls and CH calls ['code/running_duplicates_script.R' from Sebas])
 
-- `germ_90_genes.txt`:
+- `data/germ_90_genes.txt`:
 List of TSGs included in the germline assessment for rare and P/LP variants
 
-- `FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt`:
+- `data/FILTERED_50k.CH.calls_2022-02-16_anonymized.tsv_2022-08-23.txt`:
 CH calls from 50K study removing duplicates from multiple sample by patients 
 
-- `List_of_anonymized_Samples.txt`:
+- `data/List_of_anonymized_Samples.txt`:
 List of 50k patients included in the germline calling pipeline
 
-- `ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv`:
+- `data/ch.50k_clinical_annots_by_SAMPLE_2021-12-06_anonymized.tsv`:
 Clincal data annotation for patients in the 50K CH characterization (i.e. dmps id, age, inferred ancestry, smoking history, therapy status, Teng's mCA calls, clinical follow-up from Gao et al,  etc)
 
-- `calls_mCA.50k.annotations_2022-03-07_anonymized.tsv`:
+- `data/calls_mCA.50k.annotations_2022-03-07_anonymized.tsv`:
 List of copy number alterations calls from running FACETS-CH (from Gao et.al 2020)
 
-- `mCA.50k.annotations_2022-03-07_anonymized.tsv`:
+- `data/mCA.50k.annotations_2022-03-07_anonymized.tsv`:
 Data matrix with annotations for mCA calls
 
-- `oncotree_conversion_codes.txt`:
+- `data/oncotree_conversion_codes.txt`:
 OncoTree codes and conversion columns to different levels in OncoTree classification
 
-- `refGene_hg19.txt`:
+- `data/refGene_hg19.txt`:
 Genomic regions for genes in hg19 genomic assembly (from UCSC Genome Browser database)
 
-- `CH.GERM_association.matrix___2022-09-08.tsv`:
+- `data_mined/CH.GERM_association.matrix___2022-09-08.tsv`:
 Data matrix by patient with clinical annotations and all annotations regarding CH and Germline events to run associations (`study file!`)
 
-- `all_germ_cols.txt`:
+- `data_mined/all_germ_cols.txt`:
 List of germline columns to run associations by gene when running scripts in `code/inJuno/NF_main.associations.by.gene_inJuno`
 
-- `germ_cnvs_and_mCA.conflict_2022-09-08.txt`:
+- `data_mined/germ_cnvs_and_mCA.conflict_2022-09-08.txt`:
 Germline CNVs annotated with 'conflicting' tag (if affecting same patient and gene when compared to mCAs calls)
 
 - `mCA_calls_and_germ.conflict_2022-09-08.txt`:
